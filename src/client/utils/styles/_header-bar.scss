@@ -15,8 +15,9 @@
  */
 
 %header-bar {
-  background: $background-brand;
-  color: $white;
+  /*background: $background-brand;
+  color: $white;*/
+  color: #5f6571;
   font-size: 16px;
   z-index: 11;
 
@@ -32,7 +33,8 @@
       padding: 11px 5px;
 
       svg path {
-        fill: #fff;
+        /*fill: #fff;*/
+        fill: #5f6571;
       }
     }
 
@@ -100,7 +102,8 @@
       }
 
       svg path {
-        fill: #fff;
+        /*fill: #fff;*/
+        fill: #5f6571;
       }
     }
 

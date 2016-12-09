@@ -91,10 +91,13 @@ export class SettingsHeaderBar extends React.Component<SettingsHeaderBarProps, S
     }
 
     return <header className="settings-header-bar" style={headerStyle}>
-      <div className="left-bar" onClick={onNavClick}>
+      {/*<div className="left-bar" onClick={onNavClick}>
         <div className="menu-icon">
           <SvgIcon svg={require('../../../icons/menu.svg')}/>
         </div>
+        <div className="title">{title}</div>
+      </div>*/}
+      <div className="left-bar">
         <div className="title">{title}</div>
       </div>
       <div className="right-bar">
@@ -102,7 +105,7 @@ export class SettingsHeaderBar extends React.Component<SettingsHeaderBarProps, S
         <div className="icon-button home" onClick={this.onHomeClick.bind(this)}>
           <SvgIcon svg={require('../../../icons/home.svg')}/>
         </div>
-        {userButton}
+        {/*userButton*/}
       </div>
       {this.renderUserMenu()}
     </header>;
