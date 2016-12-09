@@ -219,10 +219,12 @@ export class CollectionHeaderBar extends React.Component<CollectionHeaderBarProp
     }
 
     return <header className="collection-header-bar" style={this.getHeaderStyle(customization)}>
-      <div className="left-bar" onClick={onNavClick}>
+      {/*<div className="left-bar" onClick={onNavClick}>
         <div className="menu-icon">
           <SvgIcon svg={require('../../../icons/menu.svg')}/>
         </div>
+      </div>*/}
+      <div className="left-bar">
         <div className="title">{title}</div>
       </div>
       <div className="right-bar">
@@ -238,10 +240,10 @@ export class CollectionHeaderBar extends React.Component<CollectionHeaderBarProp
           </div>
         : null }
 
-        <div className="icon-button settings" onClick={this.onSettingsClick.bind(this)}>
+        {/*<div className="icon-button settings" onClick={this.onSettingsClick.bind(this)}>
           <SvgIcon svg={require('../../../icons/full-settings.svg')}/>
-        </div>
-        {userButton}
+        </div>*/}
+        {/*userButton*/}
       </div>
       {this.renderUserMenu()}
       {this.renderAddMenu()}

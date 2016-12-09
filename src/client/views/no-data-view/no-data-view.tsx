@@ -111,10 +111,10 @@ export class NoDataView extends React.Component <NoDataViewProps, NoDataViewStat
         customization={customization}
         title={STRINGS.home}
       >
-        <button className="text-button" onClick={onOpenAbout}>
+        {/*<button className="text-button" onClick={onOpenAbout}>
           {STRINGS.infoAndFeedback}
-        </button>
-        {this.renderSettingsIcon()}
+        </button>*/}
+        {/*this.renderSettingsIcon()*/}
       </NoDataHeaderBar>
       <div className="container">
         { this.renderTitle() }

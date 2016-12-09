@@ -271,14 +271,14 @@ export class HomeView extends React.Component< HomeViewProps, HomeViewState> {
         customization={customization}
         title={STRINGS.home}
       >
-        <button className="text-button" onClick={onOpenAbout}>
+        {/*<button className="text-button" onClick={onOpenAbout}>
           {STRINGS.infoAndFeedback}
-        </button>
-        {this.renderSettingsIcon()}
+        </button>*/}
+        {/*this.renderSettingsIcon()*/}
       </HomeHeaderBar>
 
       <div className="container">
-        {this.renderDataCubes()}
+        {/*this.renderDataCubes()*/}
         {this.renderCollections()}
       </div>
       {showAddCollectionModal ? this.renderAddCollectionModal() : null}
